@@ -1,0 +1,2 @@
+rootProject.name='CocinaFacil'
+include ':app'

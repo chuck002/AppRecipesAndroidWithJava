@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/fondorecetasxxxhdpi"
+    tools:context=".MuestraReceta">
+
+    <TextView
+        android:id="@+id/id_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="23dp"
+        android:gravity="center_horizontal"
+        android:text="Nombre de Receta"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/id_imagen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/id_imagen"
+        android:layout_width="340dp"
+        android:layout_height="140dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/id_ingredientes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_nombre" />
+
+    <TextView
+        android:id="@+id/id_ingredientes"
+        android:layout_width="343dp"
+        android:layout_height="440dp"
+        android:layout_marginBottom="91dp"
+        android:background="@android:color/holo_blue_bright"
+        android:gravity="center_horizontal"
+        android:text="Ingredientes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_imagen" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        ads:adUnitId="ca-app-pub-8026622122174762/7939911729"
+        ads:adSize="BANNER"
+        android:id="@+id/adViewRecetas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_ingredientes" />
+</androidx.constraintlayout.widget.ConstraintLayout>
